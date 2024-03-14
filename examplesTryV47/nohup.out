@@ -1,0 +1,666 @@
+2024-03-14 09:47:43.881561: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2024-03-14 09:47:43.922324: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:9261] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2024-03-14 09:47:43.922359: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:607] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2024-03-14 09:47:43.923570: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1515] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2024-03-14 09:47:43.930506: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-03-14 09:47:45.770419: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Running in inference-only mode.
+/usr4/ds598xz/ziyechen/.local/lib/python3.10/site-packages/stable_baselines3/common/vec_env/patch_gym.py:49: UserWarning: You provided an OpenAI Gym environment. We strongly recommend transitioning to Gymnasium environments. Stable-Baselines3 is automatically wrapping your environments in a compatibility layer, which could potentially cause issues.
+  warnings.warn(
+Running in inference-only mode.
+Namespace(id='1849', learning_rate=0.001, gamma=0.995, gae_lambda=0.95, batch_size=2048, step_count=10000000, n_steps=2048, path=None, n_envs=1)
+Run id 1849
+Using cuda device
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+Logging models and replays to './models/'.
+Training model...
+Logging to ./lux_tensorboard/PPO_4
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 97.2     |
+|    ep_rew_mean     | 0.0856   |
+| time/              |          |
+|    fps             | 520      |
+|    iterations      | 1        |
+|    time_elapsed    | 3        |
+|    total_timesteps | 2048     |
+---------------------------------
+rew/r_total=0.02,rew/r_wood=0.01,rew/r_coal=0.00,rew/r_uranium=0.00,rew/r_research=0.01,rew/r_city_tiles_end=0.00,rew/r_fuel_collected=0.01,rew/r_units=0.00,rew/r_city_tiles=0.00,game/turns=38.00,game/research=4.00,game/unit_count=0.00,game/cart_count=0.00,game/city_count=0.00,game/city_tiles=0.00,game/wood_rate_mined=0.01,game/coal_rate_mined=0.00,game/uranium_rate_mined=0.00
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 111         |
+|    ep_rew_mean          | 0.432       |
+| time/                   |             |
+|    fps                  | 544         |
+|    iterations           | 2           |
+|    time_elapsed         | 7           |
+|    total_timesteps      | 4096        |
+| train/                  |             |
+|    approx_kl            | 0.008761083 |
+|    clip_fraction        | 0.0368      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.94       |
+|    explained_variance   | -0.951      |
+|    learning_rate        | 0.001       |
+|    loss                 | 0.0129      |
+|    n_updates            | 10          |
+|    policy_gradient_loss | -0.006      |
+|    value_loss           | 0.072       |
+-----------------------------------------
+rew/r_total=0.03,rew/r_wood=0.01,rew/r_coal=0.00,rew/r_uranium=0.00,rew/r_research=0.02,rew/r_city_tiles_end=0.00,rew/r_fuel_collected=0.00,rew/r_units=0.00,rew/r_city_tiles=0.00,game/turns=112.00,game/research=6.00,game/unit_count=0.00,game/cart_count=0.00,game/city_count=0.00,game/city_tiles=0.00,game/wood_rate_mined=0.01,game/coal_rate_mined=0.00,game/uranium_rate_mined=0.00
+rew/r_total=0.06,rew/r_wood=0.02,rew/r_coal=0.00,rew/r_uranium=0.00,rew/r_research=0.02,rew/r_city_tiles_end=0.00,rew/r_fuel_collected=0.01,rew/r_units=0.00,rew/r_city_tiles=0.00,game/turns=75.00,game/research=10.00,game/unit_count=0.00,game/cart_count=0.00,game/city_count=0.00,game/city_tiles=0.00,game/wood_rate_mined=0.02,game/coal_rate_mined=0.00,game/uranium_rate_mined=0.00
+rew/r_total=0.04,rew/r_wood=0.03,rew/r_coal=0.00,rew/r_uranium=0.00,rew/r_research=0.02,rew/r_city_tiles_end=0.00,rew/r_fuel_collected=0.00,rew/r_units=0.00,rew/r_city_tiles=0.00,game/turns=71.00,game/research=6.00,game/unit_count=0.00,game/cart_count=0.00,game/city_count=0.00,game/city_tiles=0.00,game/wood_rate_mined=0.03,game/coal_rate_mined=0.00,game/uranium_rate_mined=0.00
+rew/r_total=0.02,rew/r_wood=0.01,rew/r_coal=0.00,rew/r_uranium=0.00,rew/r_research=0.01,rew/r_city_tiles_end=0.00,rew/r_fuel_collected=0.00,rew/r_units=0.00,rew/r_city_tiles=0.00,game/turns=40.00,game/research=4.00,game/unit_count=0.00,game/cart_count=0.00,game/city_count=0.00,game/city_tiles=0.00,game/wood_rate_mined=0.01,game/coal_rate_mined=0.00,game/uranium_rate_mined=0.00
+rew/r_total=0.08,rew/r_wood=0.05,rew/r_coal=0.00,rew/r_uranium=0.00,rew/r_research=0.03,rew/r_city_tiles_end=0.00,rew/r_fuel_collected=0.00,rew/r_units=0.00,rew/r_city_tiles=0.00,game/turns=152.00,game/research=12.00,game/unit_count=0.00,game/cart_count=0.00,game/city_count=0.00,game/city_tiles=0.00,game/wood_rate_mined=0.05,game/coal_rate_mined=0.00,game/uranium_rate_mined=0.00
+rew/r_total=0.03,rew/r_wood=0.02,rew/r_coal=0.00,rew/r_uranium=0.00,rew/r_research=0.01,rew/r_city_tiles_end=0.00,rew/r_fuel_collected=0.00,rew/r_units=0.00,rew/r_city_tiles=0.00,game/turns=71.00,game/research=5.00,game/unit_count=0.00,game/cart_count=0.00,game/city_count=0.00,game/city_tiles=0.00,game/wood_rate_mined=0.02,game/coal_rate_mined=0.00,game/uranium_rate_mined=0.00
+rew/r_total=0.02,rew/r_wood=0.01,rew/r_coal=0.00,rew/r_uranium=0.00,rew/r_research=0.01,rew/r_city_tiles_end=0.00,rew/r_fuel_collected=0.00,rew/r_units=0.00,rew/r_city_tiles=0.00,game/turns=32.00,game/research=5.00,game/unit_count=0.00,game/cart_count=0.00,game/city_count=0.00,game/city_tiles=0.00,game/wood_rate_mined=0.01,game/coal_rate_mined=0.00,game/uranium_rate_mined=0.00
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 97          |
+|    ep_rew_mean          | 0.277       |
+| time/                   |             |
+|    fps                  | 555         |
+|    iterations           | 3           |
+|    time_elapsed         | 11          |
+|    total_timesteps      | 6144        |
+| train/                  |             |
+|    approx_kl            | 0.003441308 |
+|    clip_fraction        | 0.000684    |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.94       |
+|    explained_variance   | -0.121      |
+|    learning_rate        | 0.001       |
+|    loss                 | 0.0809      |
+|    n_updates            | 20          |
+|    policy_gradient_loss | -0.00285    |
+|    value_loss           | 0.209       |
+-----------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 106         |
+|    ep_rew_mean          | 0.256       |
+| time/                   |             |
+|    fps                  | 572         |
+|    iterations           | 4           |
+|    time_elapsed         | 14          |
+|    total_timesteps      | 8192        |
+| train/                  |             |
+|    approx_kl            | 0.008407636 |
+|    clip_fraction        | 0.0345      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.94       |
+|    explained_variance   | -0.547      |
+|    learning_rate        | 0.001       |
+|    loss                 | -0.00155    |
+|    n_updates            | 30          |
+|    policy_gradient_loss | -0.00652    |
+|    value_loss           | 0.0311      |
+-----------------------------------------
+rew/r_total=0.20,rew/r_wood=0.14,rew/r_coal=0.00,rew/r_uranium=0.00,rew/r_research=0.03,rew/r_city_tiles_end=0.00,rew/r_fuel_collected=0.02,rew/r_units=0.00,rew/r_city_tiles=0.00,game/turns=120.00,game/research=13.00,game/unit_count=0.00,game/cart_count=0.00,game/city_count=0.00,game/city_tiles=0.00,game/wood_rate_mined=0.14,game/coal_rate_mined=0.00,game/uranium_rate_mined=0.00
+rew/r_total=0.06,rew/r_wood=0.04,rew/r_coal=0.00,rew/r_uranium=0.00,rew/r_research=0.02,rew/r_city_tiles_end=0.00,rew/r_fuel_collected=0.00,rew/r_units=0.00,rew/r_city_tiles=0.00,game/turns=71.00,game/research=6.00,game/unit_count=0.00,game/cart_count=0.00,game/city_count=0.00,game/city_tiles=0.00,game/wood_rate_mined=0.04,game/coal_rate_mined=0.00,game/uranium_rate_mined=0.00
+rew/r_total=0.30,rew/r_wood=0.24,rew/r_coal=0.00,rew/r_uranium=0.00,rew/r_research=0.05,rew/r_city_tiles_end=0.00,rew/r_fuel_collected=0.01,rew/r_units=0.00,rew/r_city_tiles=0.00,game/turns=195.00,game/research=21.00,game/unit_count=0.00,game/cart_count=0.00,game/city_count=0.00,game/city_tiles=0.00,game/wood_rate_mined=0.24,game/coal_rate_mined=0.00,game/uranium_rate_mined=0.00
+rew/r_total=0.19,rew/r_wood=0.14,rew/r_coal=0.00,rew/r_uranium=0.00,rew/r_research=0.04,rew/r_city_tiles_end=0.00,rew/r_fuel_collected=0.01,rew/r_units=0.00,rew/r_city_tiles=0.00,game/turns=231.00,game/research=16.00,game/unit_count=0.00,game/cart_count=0.00,game/city_count=0.00,game/city_tiles=0.00,game/wood_rate_mined=0.14,game/coal_rate_mined=0.00,game/uranium_rate_mined=0.00
+rew/r_total=0.18,rew/r_wood=0.12,rew/r_coal=0.00,rew/r_uranium=0.00,rew/r_research=0.05,rew/r_city_tiles_end=0.00,rew/r_fuel_collected=0.01,rew/r_units=0.00,rew/r_city_tiles=0.00,game/turns=191.00,game/research=21.00,game/unit_count=0.00,game/cart_count=0.00,game/city_count=0.00,game/city_tiles=0.00,game/wood_rate_mined=0.12,game/coal_rate_mined=0.00,game/uranium_rate_mined=0.00
+----------------------------------------
+| rollout/                |            |
+|    ep_len_mean          | 111        |
+|    ep_rew_mean          | 0.249      |
+| time/                   |            |
+|    fps                  | 440        |
+|    iterations           | 5          |
+|    time_elapsed         | 23         |
+|    total_timesteps      | 10240      |
+| train/                  |            |
+|    approx_kl            | 0.00774676 |
+|    clip_fraction        | 0.00449    |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -1.93      |
+|    explained_variance   | -1         |
+|    learning_rate        | 0.001      |
+|    loss                 | -0.00269   |
+|    n_updates            | 40         |
+|    policy_gradient_loss | -0.00476   |
+|    value_loss           | 0.0221     |
+----------------------------------------
+rew/r_total=0.09,rew/r_wood=0.06,rew/r_coal=0.00,rew/r_uranium=0.00,rew/r_research=0.02,rew/r_city_tiles_end=0.00,rew/r_fuel_collected=0.01,rew/r_units=0.00,rew/r_city_tiles=0.00,game/turns=157.00,game/research=8.00,game/unit_count=0.00,game/cart_count=0.00,game/city_count=0.00,game/city_tiles=0.00,game/wood_rate_mined=0.06,game/coal_rate_mined=0.00,game/uranium_rate_mined=0.00
+rew/r_total=0.03,rew/r_wood=0.01,rew/r_coal=0.00,rew/r_uranium=0.00,rew/r_research=0.02,rew/r_city_tiles_end=0.00,rew/r_fuel_collected=0.00,rew/r_units=0.00,rew/r_city_tiles=0.00,game/turns=71.00,game/research=7.00,game/unit_count=0.00,game/cart_count=0.00,game/city_count=0.00,game/city_tiles=0.00,game/wood_rate_mined=0.01,game/coal_rate_mined=0.00,game/uranium_rate_mined=0.00
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 99.9        |
+|    ep_rew_mean          | 0.201       |
+| time/                   |             |
+|    fps                  | 457         |
+|    iterations           | 6           |
+|    time_elapsed         | 26          |
+|    total_timesteps      | 12288       |
+| train/                  |             |
+|    approx_kl            | 0.008501573 |
+|    clip_fraction        | 0.0169      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.92       |
+|    explained_variance   | 0.0345      |
+|    learning_rate        | 0.001       |
+|    loss                 | -0.00449    |
+|    n_updates            | 50          |
+|    policy_gradient_loss | -0.00511    |
+|    value_loss           | 0.0156      |
+-----------------------------------------
+rew/r_total=0.04,rew/r_wood=0.02,rew/r_coal=0.00,rew/r_uranium=0.00,rew/r_research=0.01,rew/r_city_tiles_end=0.00,rew/r_fuel_collected=0.00,rew/r_units=0.00,rew/r_city_tiles=0.00,game/turns=75.00,game/research=5.00,game/unit_count=0.00,game/cart_count=0.00,game/city_count=0.00,game/city_tiles=0.00,game/wood_rate_mined=0.02,game/coal_rate_mined=0.00,game/uranium_rate_mined=0.00
+rew/r_total=0.09,rew/r_wood=0.04,rew/r_coal=0.00,rew/r_uranium=0.00,rew/r_research=0.03,rew/r_city_tiles_end=0.00,rew/r_fuel_collected=0.01,rew/r_units=0.00,rew/r_city_tiles=0.00,game/turns=119.00,game/research=13.00,game/unit_count=0.00,game/cart_count=0.00,game/city_count=0.00,game/city_tiles=0.00,game/wood_rate_mined=0.04,game/coal_rate_mined=0.00,game/uranium_rate_mined=0.00
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 99.6        |
+|    ep_rew_mean          | 0.128       |
+| time/                   |             |
+|    fps                  | 475         |
+|    iterations           | 7           |
+|    time_elapsed         | 30          |
+|    total_timesteps      | 14336       |
+| train/                  |             |
+|    approx_kl            | 0.005289044 |
+|    clip_fraction        | 0.00288     |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.89       |
+|    explained_variance   | 0.136       |
+|    learning_rate        | 0.001       |
+|    loss                 | -0.004      |
+|    n_updates            | 60          |
+|    policy_gradient_loss | -0.00397    |
+|    value_loss           | 0.0136      |
+-----------------------------------------
+rew/r_total=0.02,rew/r_wood=0.01,rew/r_coal=0.00,rew/r_uranium=0.00,rew/r_research=0.01,rew/r_city_tiles_end=0.00,rew/r_fuel_collected=0.00,rew/r_units=0.00,rew/r_city_tiles=0.00,game/turns=31.00,game/research=5.00,game/unit_count=0.00,game/cart_count=0.00,game/city_count=0.00,game/city_tiles=0.00,game/wood_rate_mined=0.01,game/coal_rate_mined=0.00,game/uranium_rate_mined=0.00
+rew/r_total=0.02,rew/r_wood=0.01,rew/r_coal=0.00,rew/r_uranium=0.00,rew/r_research=0.01,rew/r_city_tiles_end=0.00,rew/r_fuel_collected=0.00,rew/r_units=0.00,rew/r_city_tiles=0.00,game/turns=116.00,game/research=4.00,game/unit_count=0.00,game/cart_count=0.00,game/city_count=0.00,game/city_tiles=0.00,game/wood_rate_mined=0.01,game/coal_rate_mined=0.00,game/uranium_rate_mined=0.00
+rew/r_total=0.05,rew/r_wood=0.03,rew/r_coal=0.00,rew/r_uranium=0.00,rew/r_research=0.02,rew/r_city_tiles_end=0.00,rew/r_fuel_collected=0.01,rew/r_units=0.00,rew/r_city_tiles=0.00,game/turns=71.00,game/research=6.00,game/unit_count=0.00,game/cart_count=0.00,game/city_count=0.00,game/city_tiles=0.00,game/wood_rate_mined=0.03,game/coal_rate_mined=0.00,game/uranium_rate_mined=0.00
+rew/r_total=0.14,rew/r_wood=0.11,rew/r_coal=0.00,rew/r_uranium=0.00,rew/r_research=0.03,rew/r_city_tiles_end=0.00,rew/r_fuel_collected=0.00,rew/r_units=0.00,rew/r_city_tiles=0.00,game/turns=191.00,game/research=13.00,game/unit_count=0.00,game/cart_count=0.00,game/city_count=0.00,game/city_tiles=0.00,game/wood_rate_mined=0.11,game/coal_rate_mined=0.00,game/uranium_rate_mined=0.00
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 99.8        |
+|    ep_rew_mean          | 0.125       |
+| time/                   |             |
+|    fps                  | 488         |
+|    iterations           | 8           |
+|    time_elapsed         | 33          |
+|    total_timesteps      | 16384       |
+| train/                  |             |
+|    approx_kl            | 0.011650853 |
+|    clip_fraction        | 0.0464      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.89       |
+|    explained_variance   | 0.355       |
+|    learning_rate        | 0.001       |
+|    loss                 | -0.00548    |
+|    n_updates            | 70          |
+|    policy_gradient_loss | -0.00601    |
+|    value_loss           | 0.0145      |
+-----------------------------------------
+rew/r_total=0.06,rew/r_wood=0.03,rew/r_coal=0.00,rew/r_uranium=0.00,rew/r_research=0.02,rew/r_city_tiles_end=0.00,rew/r_fuel_collected=0.01,rew/r_units=0.00,rew/r_city_tiles=0.00,game/turns=72.00,game/research=8.00,game/unit_count=0.00,game/cart_count=0.00,game/city_count=0.00,game/city_tiles=0.00,game/wood_rate_mined=0.03,game/coal_rate_mined=0.00,game/uranium_rate_mined=0.00
+rew/r_total=0.08,rew/r_wood=0.05,rew/r_coal=0.00,rew/r_uranium=0.00,rew/r_research=0.02,rew/r_city_tiles_end=0.00,rew/r_fuel_collected=0.01,rew/r_units=0.00,rew/r_city_tiles=0.00,game/turns=75.00,game/research=7.00,game/unit_count=0.00,game/cart_count=0.00,game/city_count=0.00,game/city_tiles=0.00,game/wood_rate_mined=0.05,game/coal_rate_mined=0.00,game/uranium_rate_mined=0.00
+rew/r_total=0.11,rew/r_wood=0.08,rew/r_coal=0.00,rew/r_uranium=0.00,rew/r_research=0.03,rew/r_city_tiles_end=0.00,rew/r_fuel_collected=0.00,rew/r_units=0.00,rew/r_city_tiles=0.00,game/turns=276.00,game/research=14.00,game/unit_count=0.00,game/cart_count=0.00,game/city_count=0.00,game/city_tiles=0.00,game/wood_rate_mined=0.08,game/coal_rate_mined=0.00,game/uranium_rate_mined=0.00
+rew/r_total=0.02,rew/r_wood=0.01,rew/r_coal=0.00,rew/r_uranium=0.00,rew/r_research=0.01,rew/r_city_tiles_end=0.00,rew/r_fuel_collected=0.00,rew/r_units=0.00,rew/r_city_tiles=0.00,game/turns=32.00,game/research=4.00,game/unit_count=0.00,game/cart_count=0.00,game/city_count=0.00,game/city_tiles=0.00,game/wood_rate_mined=0.01,game/coal_rate_mined=0.00,game/uranium_rate_mined=0.00
+rew/r_total=0.11,rew/r_wood=0.07,rew/r_coal=0.00,rew/r_uranium=0.00,rew/r_research=0.04,rew/r_city_tiles_end=0.00,rew/r_fuel_collected=0.00,rew/r_units=0.00,rew/r_city_tiles=0.00,game/turns=271.00,game/research=17.00,game/unit_count=0.00,game/cart_count=0.00,game/city_count=0.00,game/city_tiles=0.00,game/wood_rate_mined=0.07,game/coal_rate_mined=0.00,game/uranium_rate_mined=0.00
+rew/r_total=0.04,rew/r_wood=0.02,rew/r_coal=0.00,rew/r_uranium=0.00,rew/r_research=0.02,rew/r_city_tiles_end=0.00,rew/r_fuel_collected=0.01,rew/r_units=0.00,rew/r_city_tiles=0.00,game/turns=37.00,game/research=6.00,game/unit_count=0.00,game/cart_count=0.00,game/city_count=0.00,game/city_tiles=0.00,game/wood_rate_mined=0.02,game/coal_rate_mined=0.00,game/uranium_rate_mined=0.00
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 89.4        |
+|    ep_rew_mean          | 0.111       |
+| time/                   |             |
+|    fps                  | 498         |
+|    iterations           | 9           |
+|    time_elapsed         | 36          |
+|    total_timesteps      | 18432       |
+| train/                  |             |
+|    approx_kl            | 0.007944174 |
+|    clip_fraction        | 0.0119      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.91       |
+|    explained_variance   | 0.168       |
+|    learning_rate        | 0.001       |
+|    loss                 | -0.00898    |
+|    n_updates            | 80          |
+|    policy_gradient_loss | -0.00475    |
+|    value_loss           | 0.00757     |
+-----------------------------------------
+rew/r_total=0.43,rew/r_wood=0.23,rew/r_coal=0.00,rew/r_uranium=0.00,rew/r_research=0.07,rew/r_city_tiles_end=0.00,rew/r_fuel_collected=0.03,rew/r_units=0.10,rew/r_city_tiles=0.00,game/turns=360.00,game/research=27.00,game/unit_count=2.00,game/cart_count=0.00,game/city_count=0.00,game/city_tiles=0.00,game/wood_rate_mined=0.23,game/coal_rate_mined=0.00,game/uranium_rate_mined=0.00
+rew/r_total=0.03,rew/r_wood=0.01,rew/r_coal=0.00,rew/r_uranium=0.00,rew/r_research=0.02,rew/r_city_tiles_end=0.00,rew/r_fuel_collected=0.00,rew/r_units=0.00,rew/r_city_tiles=0.00,game/turns=32.00,game/research=7.00,game/unit_count=0.00,game/cart_count=0.00,game/city_count=0.00,game/city_tiles=0.00,game/wood_rate_mined=0.01,game/coal_rate_mined=0.00,game/uranium_rate_mined=0.00
+rew/r_total=0.07,rew/r_wood=0.04,rew/r_coal=0.00,rew/r_uranium=0.00,rew/r_research=0.03,rew/r_city_tiles_end=0.00,rew/r_fuel_collected=0.00,rew/r_units=0.00,rew/r_city_tiles=0.00,game/turns=111.00,game/research=11.00,game/unit_count=0.00,game/cart_count=0.00,game/city_count=0.00,game/city_tiles=0.00,game/wood_rate_mined=0.04,game/coal_rate_mined=0.00,game/uranium_rate_mined=0.00
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 93.9         |
+|    ep_rew_mean          | 0.107        |
+| time/                   |              |
+|    fps                  | 443          |
+|    iterations           | 10           |
+|    time_elapsed         | 46           |
+|    total_timesteps      | 20480        |
+| train/                  |              |
+|    approx_kl            | 0.0088514425 |
+|    clip_fraction        | 0.0371       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -1.9         |
+|    explained_variance   | 0.0263       |
+|    learning_rate        | 0.001        |
+|    loss                 | -0.00807     |
+|    n_updates            | 90           |
+|    policy_gradient_loss | -0.00558     |
+|    value_loss           | 0.00913      |
+------------------------------------------
+rew/r_total=0.16,rew/r_wood=0.13,rew/r_coal=0.00,rew/r_uranium=0.00,rew/r_research=0.02,rew/r_city_tiles_end=0.00,rew/r_fuel_collected=0.01,rew/r_units=0.00,rew/r_city_tiles=0.00,game/turns=151.00,game/research=8.00,game/unit_count=0.00,game/cart_count=0.00,game/city_count=0.00,game/city_tiles=0.00,game/wood_rate_mined=0.13,game/coal_rate_mined=0.00,game/uranium_rate_mined=0.00
+rew/r_total=0.05,rew/r_wood=0.03,rew/r_coal=0.00,rew/r_uranium=0.00,rew/r_research=0.01,rew/r_city_tiles_end=0.00,rew/r_fuel_collected=0.01,rew/r_units=0.00,rew/r_city_tiles=0.00,game/turns=39.00,game/research=4.00,game/unit_count=0.00,game/cart_count=0.00,game/city_count=0.00,game/city_tiles=0.00,game/wood_rate_mined=0.03,game/coal_rate_mined=0.00,game/uranium_rate_mined=0.00
+rew/r_total=0.02,rew/r_wood=0.01,rew/r_coal=0.00,rew/r_uranium=0.00,rew/r_research=0.01,rew/r_city_tiles_end=0.00,rew/r_fuel_collected=0.00,rew/r_units=0.00,rew/r_city_tiles=0.00,game/turns=71.00,game/research=5.00,game/unit_count=0.00,game/cart_count=0.00,game/city_count=0.00,game/city_tiles=0.00,game/wood_rate_mined=0.01,game/coal_rate_mined=0.00,game/uranium_rate_mined=0.00
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 109         |
+|    ep_rew_mean          | 0.136       |
+| time/                   |             |
+|    fps                  | 454         |
+|    iterations           | 11          |
+|    time_elapsed         | 49          |
+|    total_timesteps      | 22528       |
+| train/                  |             |
+|    approx_kl            | 0.008962342 |
+|    clip_fraction        | 0.0293      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.88       |
+|    explained_variance   | 0.151       |
+|    learning_rate        | 0.001       |
+|    loss                 | -0.00966    |
+|    n_updates            | 100         |
+|    policy_gradient_loss | -0.00585    |
+|    value_loss           | 0.00814     |
+-----------------------------------------
+rew/r_total=7.55,rew/r_wood=0.40,rew/r_coal=0.00,rew/r_uranium=0.00,rew/r_research=0.16,rew/r_city_tiles_end=6.00,rew/r_fuel_collected=0.09,rew/r_units=0.30,rew/r_city_tiles=0.60,game/turns=198.00,game/research=65.00,game/unit_count=6.00,game/cart_count=0.00,game/city_count=5.00,game/city_tiles=6.00,game/wood_rate_mined=0.40,game/coal_rate_mined=0.00,game/uranium_rate_mined=0.00
+rew/r_total=0.03,rew/r_wood=0.02,rew/r_coal=0.00,rew/r_uranium=0.00,rew/r_research=0.01,rew/r_city_tiles_end=0.00,rew/r_fuel_collected=0.00,rew/r_units=0.00,rew/r_city_tiles=0.00,game/turns=32.00,game/research=4.00,game/unit_count=0.00,game/cart_count=0.00,game/city_count=0.00,game/city_tiles=0.00,game/wood_rate_mined=0.02,game/coal_rate_mined=0.00,game/uranium_rate_mined=0.00
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 124         |
+|    ep_rew_mean          | 0.265       |
+| time/                   |             |
+|    fps                  | 466         |
+|    iterations           | 12          |
+|    time_elapsed         | 52          |
+|    total_timesteps      | 24576       |
+| train/                  |             |
+|    approx_kl            | 0.009771449 |
+|    clip_fraction        | 0.0544      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.85       |
+|    explained_variance   | 0.19        |
+|    learning_rate        | 0.001       |
+|    loss                 | -0.00182    |
+|    n_updates            | 110         |
+|    policy_gradient_loss | -0.00589    |
+|    value_loss           | 0.02        |
+-----------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 127         |
+|    ep_rew_mean          | 0.294       |
+| time/                   |             |
+|    fps                  | 475         |
+|    iterations           | 13          |
+|    time_elapsed         | 56          |
+|    total_timesteps      | 26624       |
+| train/                  |             |
+|    approx_kl            | 0.008783623 |
+|    clip_fraction        | 0.0413      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.84       |
+|    explained_variance   | 0.00169     |
+|    learning_rate        | 0.001       |
+|    loss                 | 0.099       |
+|    n_updates            | 120         |
+|    policy_gradient_loss | -0.00439    |
+|    value_loss           | 0.235       |
+-----------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 146         |
+|    ep_rew_mean          | 0.424       |
+| time/                   |             |
+|    fps                  | 486         |
+|    iterations           | 14          |
+|    time_elapsed         | 58          |
+|    total_timesteps      | 28672       |
+| train/                  |             |
+|    approx_kl            | 0.012117661 |
+|    clip_fraction        | 0.0888      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.81       |
+|    explained_variance   | 0.0875      |
+|    learning_rate        | 0.001       |
+|    loss                 | 0.00299     |
+|    n_updates            | 130         |
+|    policy_gradient_loss | -0.00533    |
+|    value_loss           | 0.0286      |
+-----------------------------------------
+rew/r_total=8.76,rew/r_wood=1.34,rew/r_coal=0.00,rew/r_uranium=0.00,rew/r_research=0.31,rew/r_city_tiles_end=6.00,rew/r_fuel_collected=0.21,rew/r_units=0.30,rew/r_city_tiles=0.60,game/turns=360.00,game/research=123.00,game/unit_count=6.00,game/cart_count=0.00,game/city_count=2.00,game/city_tiles=6.00,game/wood_rate_mined=1.34,game/coal_rate_mined=0.00,game/uranium_rate_mined=0.00
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 161         |
+|    ep_rew_mean          | 0.519       |
+| time/                   |             |
+|    fps                  | 441         |
+|    iterations           | 15          |
+|    time_elapsed         | 69          |
+|    total_timesteps      | 30720       |
+| train/                  |             |
+|    approx_kl            | 0.010515463 |
+|    clip_fraction        | 0.0365      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.82       |
+|    explained_variance   | 0.0323      |
+|    learning_rate        | 0.001       |
+|    loss                 | 0.234       |
+|    n_updates            | 140         |
+|    policy_gradient_loss | -0.00456    |
+|    value_loss           | 0.509       |
+-----------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 168         |
+|    ep_rew_mean          | 0.541       |
+| time/                   |             |
+|    fps                  | 451         |
+|    iterations           | 16          |
+|    time_elapsed         | 72          |
+|    total_timesteps      | 32768       |
+| train/                  |             |
+|    approx_kl            | 0.008279111 |
+|    clip_fraction        | 0.0441      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.76       |
+|    explained_variance   | 0.329       |
+|    learning_rate        | 0.001       |
+|    loss                 | 0.0548      |
+|    n_updates            | 150         |
+|    policy_gradient_loss | -0.00738    |
+|    value_loss           | 0.143       |
+-----------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 189         |
+|    ep_rew_mean          | 0.707       |
+| time/                   |             |
+|    fps                  | 460         |
+|    iterations           | 17          |
+|    time_elapsed         | 75          |
+|    total_timesteps      | 34816       |
+| train/                  |             |
+|    approx_kl            | 0.015243521 |
+|    clip_fraction        | 0.0601      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.75       |
+|    explained_variance   | 0.232       |
+|    learning_rate        | 0.001       |
+|    loss                 | -0.0111     |
+|    n_updates            | 160         |
+|    policy_gradient_loss | -0.0103     |
+|    value_loss           | 0.0303      |
+-----------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 205         |
+|    ep_rew_mean          | 0.849       |
+| time/                   |             |
+|    fps                  | 469         |
+|    iterations           | 18          |
+|    time_elapsed         | 78          |
+|    total_timesteps      | 36864       |
+| train/                  |             |
+|    approx_kl            | 0.006630595 |
+|    clip_fraction        | 0.00957     |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.72       |
+|    explained_variance   | 0.335       |
+|    learning_rate        | 0.001       |
+|    loss                 | 0.123       |
+|    n_updates            | 170         |
+|    policy_gradient_loss | -0.00268    |
+|    value_loss           | 0.274       |
+-----------------------------------------
+rew/r_total=2.12,rew/r_wood=0.69,rew/r_coal=0.00,rew/r_uranium=0.00,rew/r_research=0.13,rew/r_city_tiles_end=1.00,rew/r_fuel_collected=0.05,rew/r_units=0.15,rew/r_city_tiles=0.10,game/turns=198.00,game/research=50.00,game/unit_count=3.00,game/cart_count=0.00,game/city_count=1.00,game/city_tiles=1.00,game/wood_rate_mined=0.69,game/coal_rate_mined=0.00,game/uranium_rate_mined=0.00
+rew/r_total=0.85,rew/r_wood=0.58,rew/r_coal=0.00,rew/r_uranium=0.00,rew/r_research=0.19,rew/r_city_tiles_end=0.00,rew/r_fuel_collected=0.04,rew/r_units=0.05,rew/r_city_tiles=0.00,game/turns=319.00,game/research=74.00,game/unit_count=1.00,game/cart_count=0.00,game/city_count=0.00,game/city_tiles=0.00,game/wood_rate_mined=0.58,game/coal_rate_mined=0.00,game/uranium_rate_mined=0.00
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 224          |
+|    ep_rew_mean          | 0.908        |
+| time/                   |              |
+|    fps                  | 477          |
+|    iterations           | 19           |
+|    time_elapsed         | 81           |
+|    total_timesteps      | 38912        |
+| train/                  |              |
+|    approx_kl            | 0.0116688125 |
+|    clip_fraction        | 0.053        |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -1.7         |
+|    explained_variance   | 0.272        |
+|    learning_rate        | 0.001        |
+|    loss                 | 0.168        |
+|    n_updates            | 180          |
+|    policy_gradient_loss | -0.00611     |
+|    value_loss           | 0.371        |
+------------------------------------------
+rew/r_total=0.04,rew/r_wood=0.03,rew/r_coal=0.00,rew/r_uranium=0.00,rew/r_research=0.02,rew/r_city_tiles_end=0.00,rew/r_fuel_collected=0.00,rew/r_units=0.00,rew/r_city_tiles=0.00,game/turns=196.00,game/research=6.00,game/unit_count=0.00,game/cart_count=0.00,game/city_count=0.00,game/city_tiles=0.00,game/wood_rate_mined=0.03,game/coal_rate_mined=0.00,game/uranium_rate_mined=0.00
+rew/r_total=6.13,rew/r_wood=0.25,rew/r_coal=0.00,rew/r_uranium=0.00,rew/r_research=0.15,rew/r_city_tiles_end=5.00,rew/r_fuel_collected=0.09,rew/r_units=0.15,rew/r_city_tiles=0.50,game/turns=198.00,game/research=58.00,game/unit_count=3.00,game/cart_count=1.00,game/city_count=2.00,game/city_tiles=5.00,game/wood_rate_mined=0.25,game/coal_rate_mined=0.00,game/uranium_rate_mined=0.00
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 235         |
+|    ep_rew_mean          | 1.01        |
+| time/                   |             |
+|    fps                  | 450         |
+|    iterations           | 20          |
+|    time_elapsed         | 90          |
+|    total_timesteps      | 40960       |
+| train/                  |             |
+|    approx_kl            | 0.006428225 |
+|    clip_fraction        | 0.018       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.67       |
+|    explained_variance   | 0.205       |
+|    learning_rate        | 0.001       |
+|    loss                 | 0.00966     |
+|    n_updates            | 190         |
+|    policy_gradient_loss | -0.00427    |
+|    value_loss           | 0.0488      |
+-----------------------------------------
+rew/r_total=0.01,rew/r_wood=0.00,rew/r_coal=0.00,rew/r_uranium=0.00,rew/r_research=0.01,rew/r_city_tiles_end=0.00,rew/r_fuel_collected=0.00,rew/r_units=0.00,rew/r_city_tiles=0.00,game/turns=32.00,game/research=4.00,game/unit_count=0.00,game/cart_count=0.00,game/city_count=0.00,game/city_tiles=0.00,game/wood_rate_mined=0.00,game/coal_rate_mined=0.00,game/uranium_rate_mined=0.00
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 240         |
+|    ep_rew_mean          | 1.06        |
+| time/                   |             |
+|    fps                  | 457         |
+|    iterations           | 21          |
+|    time_elapsed         | 93          |
+|    total_timesteps      | 43008       |
+| train/                  |             |
+|    approx_kl            | 0.013701601 |
+|    clip_fraction        | 0.064       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.7        |
+|    explained_variance   | 0.193       |
+|    learning_rate        | 0.001       |
+|    loss                 | 0.0479      |
+|    n_updates            | 200         |
+|    policy_gradient_loss | -0.00719    |
+|    value_loss           | 0.135       |
+-----------------------------------------
+rew/r_total=5.91,rew/r_wood=0.92,rew/r_coal=0.17,rew/r_uranium=0.00,rew/r_research=0.22,rew/r_city_tiles_end=4.00,rew/r_fuel_collected=0.15,rew/r_units=0.05,rew/r_city_tiles=0.40,game/turns=360.00,game/research=89.00,game/unit_count=1.00,game/cart_count=0.00,game/city_count=2.00,game/city_tiles=4.00,game/wood_rate_mined=0.92,game/coal_rate_mined=0.08,game/uranium_rate_mined=0.00
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 270         |
+|    ep_rew_mean          | 1.18        |
+| time/                   |             |
+|    fps                  | 465         |
+|    iterations           | 22          |
+|    time_elapsed         | 96          |
+|    total_timesteps      | 45056       |
+| train/                  |             |
+|    approx_kl            | 0.007200253 |
+|    clip_fraction        | 0.0334      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.7        |
+|    explained_variance   | 0.627       |
+|    learning_rate        | 0.001       |
+|    loss                 | 0.00232     |
+|    n_updates            | 210         |
+|    policy_gradient_loss | -0.00683    |
+|    value_loss           | 0.0343      |
+-----------------------------------------
+rew/r_total=0.22,rew/r_wood=0.13,rew/r_coal=0.00,rew/r_uranium=0.00,rew/r_research=0.08,rew/r_city_tiles_end=0.00,rew/r_fuel_collected=0.01,rew/r_units=0.00,rew/r_city_tiles=0.00,game/turns=240.00,game/research=31.00,game/unit_count=0.00,game/cart_count=0.00,game/city_count=0.00,game/city_tiles=0.00,game/wood_rate_mined=0.13,game/coal_rate_mined=0.00,game/uranium_rate_mined=0.00
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 286         |
+|    ep_rew_mean          | 1.29        |
+| time/                   |             |
+|    fps                  | 471         |
+|    iterations           | 23          |
+|    time_elapsed         | 99          |
+|    total_timesteps      | 47104       |
+| train/                  |             |
+|    approx_kl            | 0.008432033 |
+|    clip_fraction        | 0.0366      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.67       |
+|    explained_variance   | 0.535       |
+|    learning_rate        | 0.001       |
+|    loss                 | 0.0193      |
+|    n_updates            | 220         |
+|    policy_gradient_loss | -0.00573    |
+|    value_loss           | 0.0646      |
+-----------------------------------------
+rew/r_total=1.36,rew/r_wood=0.11,rew/r_coal=0.00,rew/r_uranium=0.00,rew/r_research=0.07,rew/r_city_tiles_end=1.00,rew/r_fuel_collected=0.03,rew/r_units=0.05,rew/r_city_tiles=0.10,game/turns=360.00,game/research=26.00,game/unit_count=1.00,game/cart_count=0.00,game/city_count=1.00,game/city_tiles=1.00,game/wood_rate_mined=0.11,game/coal_rate_mined=0.00,game/uranium_rate_mined=0.00
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 295         |
+|    ep_rew_mean          | 1.39        |
+| time/                   |             |
+|    fps                  | 477         |
+|    iterations           | 24          |
+|    time_elapsed         | 102         |
+|    total_timesteps      | 49152       |
+| train/                  |             |
+|    approx_kl            | 0.009616634 |
+|    clip_fraction        | 0.129       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.76       |
+|    explained_variance   | 0.391       |
+|    learning_rate        | 0.001       |
+|    loss                 | 0.0883      |
+|    n_updates            | 230         |
+|    policy_gradient_loss | -0.00696    |
+|    value_loss           | 0.208       |
+-----------------------------------------
+rew/r_total=0.05,rew/r_wood=0.03,rew/r_coal=0.00,rew/r_uranium=0.00,rew/r_research=0.01,rew/r_city_tiles_end=0.00,rew/r_fuel_collected=0.01,rew/r_units=0.00,rew/r_city_tiles=0.00,game/turns=40.00,game/research=4.00,game/unit_count=0.00,game/cart_count=0.00,game/city_count=0.00,game/city_tiles=0.00,game/wood_rate_mined=0.03,game/coal_rate_mined=0.00,game/uranium_rate_mined=0.00
+rew/r_total=1.45,rew/r_wood=0.23,rew/r_coal=0.00,rew/r_uranium=0.00,rew/r_research=0.06,rew/r_city_tiles_end=1.00,rew/r_fuel_collected=0.01,rew/r_units=0.05,rew/r_city_tiles=0.10,game/turns=198.00,game/research=23.00,game/unit_count=1.00,game/cart_count=0.00,game/city_count=1.00,game/city_tiles=1.00,game/wood_rate_mined=0.23,game/coal_rate_mined=0.00,game/uranium_rate_mined=0.00
+----------------------------------------
+| rollout/                |            |
+|    ep_len_mean          | 297        |
+|    ep_rew_mean          | 1.54       |
+| time/                   |            |
+|    fps                  | 455        |
+|    iterations           | 25         |
+|    time_elapsed         | 112        |
+|    total_timesteps      | 51200      |
+| train/                  |            |
+|    approx_kl            | 0.00749176 |
+|    clip_fraction        | 0.0493     |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -1.67      |
+|    explained_variance   | 0.646      |
+|    learning_rate        | 0.001      |
+|    loss                 | 0.0405     |
+|    n_updates            | 240        |
+|    policy_gradient_loss | -0.0053    |
+|    value_loss           | 0.109      |
+----------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 309         |
+|    ep_rew_mean          | 1.63        |
+| time/                   |             |
+|    fps                  | 461         |
+|    iterations           | 26          |
+|    time_elapsed         | 115         |
+|    total_timesteps      | 53248       |
+| train/                  |             |
+|    approx_kl            | 0.016135242 |
+|    clip_fraction        | 0.104       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.59       |
+|    explained_variance   | 0.226       |
+|    learning_rate        | 0.001       |
+|    loss                 | 0.2         |
+|    n_updates            | 250         |
+|    policy_gradient_loss | -0.00634    |
+|    value_loss           | 0.448       |
+-----------------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 319          |
+|    ep_rew_mean          | 1.63         |
+| time/                   |              |
+|    fps                  | 467          |
+|    iterations           | 27           |
+|    time_elapsed         | 118          |
+|    total_timesteps      | 55296        |
+| train/                  |              |
+|    approx_kl            | 0.0046146903 |
+|    clip_fraction        | 0.0384       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -1.59        |
+|    explained_variance   | 0.701        |
+|    learning_rate        | 0.001        |
+|    loss                 | 0.0368       |
+|    n_updates            | 260          |
+|    policy_gradient_loss | -0.00533     |
+|    value_loss           | 0.105        |
+------------------------------------------
+rew/r_total=0.08,rew/r_wood=0.06,rew/r_coal=0.00,rew/r_uranium=0.00,rew/r_research=0.01,rew/r_city_tiles_end=0.00,rew/r_fuel_collected=0.01,rew/r_units=0.00,rew/r_city_tiles=0.00,game/turns=72.00,game/research=5.00,game/unit_count=0.00,game/cart_count=0.00,game/city_count=0.00,game/city_tiles=0.00,game/wood_rate_mined=0.06,game/coal_rate_mined=0.00,game/uranium_rate_mined=0.00
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 337         |
+|    ep_rew_mean          | 1.75        |
+| time/                   |             |
+|    fps                  | 472         |
+|    iterations           | 28          |
+|    time_elapsed         | 121         |
+|    total_timesteps      | 57344       |
+| train/                  |             |
+|    approx_kl            | 0.010027652 |
+|    clip_fraction        | 0.0521      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.6        |
+|    explained_variance   | 0.822       |
+|    learning_rate        | 0.001       |
+|    loss                 | 0.00125     |
+|    n_updates            | 270         |
+|    policy_gradient_loss | -0.00675    |
+|    value_loss           | 0.0391      |
+-----------------------------------------
+rew/r_total=0.02,rew/r_wood=0.01,rew/r_coal=0.00,rew/r_uranium=0.00,rew/r_research=0.01,rew/r_city_tiles_end=0.00,rew/r_fuel_collected=0.00,rew/r_units=0.00,rew/r_city_tiles=0.00,game/turns=31.00,game/research=4.00,game/unit_count=0.00,game/cart_count=0.00,game/city_count=0.00,game/city_tiles=0.00,game/wood_rate_mined=0.01,game/coal_rate_mined=0.00,game/uranium_rate_mined=0.00
+rew/r_total=6.80,rew/r_wood=0.65,rew/r_coal=0.18,rew/r_uranium=0.00,rew/r_research=0.14,rew/r_city_tiles_end=5.00,rew/r_fuel_collected=0.08,rew/r_units=0.25,rew/r_city_tiles=0.50,game/turns=198.00,game/research=55.00,game/unit_count=5.00,game/cart_count=0.00,game/city_count=2.00,game/city_tiles=5.00,game/wood_rate_mined=0.65,game/coal_rate_mined=0.09,game/uranium_rate_mined=0.00
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 341          |
+|    ep_rew_mean          | 1.79         |
+| time/                   |              |
+|    fps                  | 477          |
+|    iterations           | 29           |
+|    time_elapsed         | 124          |
+|    total_timesteps      | 59392        |
+| train/                  |              |
+|    approx_kl            | 0.0080788415 |
+|    clip_fraction        | 0.0466       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -1.51        |
+|    explained_variance   | 0.483        |
+|    learning_rate        | 0.001        |
+|    loss                 | 0.2          |
+|    n_updates            | 280          |
+|    policy_gradient_loss | -0.00462     |
+|    value_loss           | 0.438        |
+------------------------------------------
